@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', 'Helvetica', sans-serif;
     margin: 0;
     background-color: #f4f6f8;
     color: #333;
@@ -10,40 +10,22 @@ body {
 
 a {
     transition: all 0.3s ease;
-    color: #1d3557;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Sticky Header */
+/* Header / Hero Section */
 header {
-    position: sticky;
-    top: 0;
     background-color: #0d1b2a;
-    color: white;
-    z-index: 100;
-    padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.header-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
 }
 
 header img {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    border: 4px solid white;
-    margin-right: 20px;
     object-fit: cover;
+    border: 4px solid #ffffff;
     transition: transform 0.3s ease;
 }
 
@@ -51,22 +33,33 @@ header img:hover {
     transform: scale(1.05);
 }
 
-.header-text h1 {
-    margin: 0 0 5px;
-    font-size: 2.2em;
+header h1 {
+    margin: 20px 0 10px;
+    font-size: 2.5em;
 }
 
-.header-text p {
-    margin: 5px 0;
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-.header-links a {
-    color: white;
-    margin: 0 10px;
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
     font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
 }
 
-/* Sections */
+header a:hover {
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Section Styles */
 section {
     max-width: 1000px;
     margin: 60px auto;
@@ -81,52 +74,34 @@ h2 {
     font-size: 1.8em;
 }
 
-/* Skills Grid */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.skill-card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-/* Projects Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.project-card {
-    background: white;
+/* Project Cards */
+.project {
+    background: #ffffff;
     padding: 25px;
+    margin: 25px 0;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
+.project:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
-/* Cards for Certifications, Achievements, Volunteering */
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+.project h3 {
+    margin-top: 0;
+    font-size: 1.5em;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+.project a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -139,18 +114,32 @@ footer {
     color: #555;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    header {
-        text-align: center;
+    header h1 {
+        font-size: 2em;
     }
 
-    header img {
-        margin: 0 0 15px;
+    header p {
+        font-size: 1em;
     }
 
-    .header-container {
-        flex-direction: column;
+    .project {
+        padding: 20px;
     }
 }
 
+@media (max-width: 480px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .project h3 {
+        font-size: 1.2em;
+    }
+}
