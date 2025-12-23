@@ -1,16 +1,18 @@
+/* General Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #f8f9fa;
+    background-color: #f4f6f8;
     color: #333;
     line-height: 1.6;
 }
 
+/* Header / Hero Section */
 header {
     background-color: #0d1b2a;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 header img {
@@ -29,6 +31,18 @@ header p {
     font-size: 1.1em;
 }
 
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
 section {
     max-width: 900px;
     margin: 40px auto;
@@ -39,14 +53,25 @@ h2 {
     color: #0d1b2a;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
+/* Project Cards */
 .project {
     background: white;
     padding: 20px;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    margin-top: 0;
 }
 
 .project a {
@@ -55,6 +80,11 @@ h2 {
     font-weight: bold;
 }
 
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
