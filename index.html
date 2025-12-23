@@ -2,166 +2,177 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoziyana Rachel | Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- STICKY HEADER -->
 <header>
-    <img src="assets/profile.jpg" alt="Hoziyana Rachel">
-    <h1>Hoziyana Rachel</h1>
-    <p>Data Science & Analytics | Machine Learning | Social Impact</p>
-    <p>
-        <a href="https://github.com/HRacheal">GitHub</a> |
-        <a href="https://www.linkedin.com/in/rachelhoziyana">LinkedIn</a> |
-        <a href="mailto:hoziyanarachel7@gmail.com">Email</a>
-    </p>
+    <div class="container header-container">
+        <img src="assets/profile.jpg" alt="Hoziyana Rachel">
+        <div class="header-text">
+            <h1>Hoziyana Rachel</h1>
+            <p>Data Science & Analytics | Machine Learning | Social Impact</p>
+            <div class="header-links">
+                <a href="https://github.com/HRacheal"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/rachelhoziyana"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:hoziyanarachel7@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </div>
 </header>
 
 <!-- ABOUT ME -->
-<section>
+<section id="about">
     <h2>About Me</h2>
     <p>I am a Data Science and Analytics specialist focused on transforming complex datasets into actionable insights. I bridge the gap between raw data and decision-making, applying machine learning, statistical analysis, and predictive modeling to real-world problems. I am detail-oriented, adaptable, and passionate about using data for measurable social and business impact, particularly in agriculture, nutrition, and education in Africa.</p>
 </section>
 
 <!-- SKILLS -->
-<section>
+<section id="skills">
     <h2>Skills</h2>
-    <p><strong>Technical:</strong> Python, R, MATLAB, SQL, Pandas, NumPy, Scikit-learn, Streamlit, Power BI, Tableau</p>
-    <p><strong>Machine Learning:</strong> Regression, Classification, Clustering, Time Series, Neural Networks</p>
-    <p><strong>Soft Skills:</strong> Problem-solving, Communication, Team Collaboration, Critical Thinking</p>
+    <div class="skills-grid">
+        <div class="skill-card"><strong>Technical:</strong> Python, R, MATLAB, SQL, Pandas, NumPy, Scikit-learn, Streamlit, Power BI, Tableau</div>
+        <div class="skill-card"><strong>Machine Learning:</strong> Regression, Classification, Clustering, Time Series, Neural Networks</div>
+        <div class="skill-card"><strong>Soft Skills:</strong> Problem-solving, Communication, Team Collaboration, Critical Thinking</div>
+    </div>
 </section>
 
 <!-- PROJECTS -->
-<section>
+<section id="projects">
     <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Stock Market Prediction</h3>
+            <p>Developed ARIMA and neural network models to forecast stock prices across 20 companies over 10 years of data.</p>
+            <p><strong>Tools:</strong> Python, MATLAB, Scikit-learn</p>
+            <p><strong>SDG:</strong> SDG 9 (Industry, Innovation, & Infrastructure)</p>
+            <a href="https://github.com/HRacheal/Stock-Market-prediction">View on GitHub</a>
+        </div>
 
-    <div class="project">
-        <h3>Stock Market Prediction</h3>
-        <p>Developed ARIMA and neural network models to forecast stock prices across 20 companies over 10 years of data.</p>
-        <p><strong>Tools:</strong> Python, MATLAB, Scikit-learn</p>
-        <p><strong>SDG Impact:</strong> SDG 9 (Industry, Innovation, & Infrastructure)</p>
-        <a href="https://github.com/HRacheal/Stock-Market-prediction">View on GitHub</a>
+        <div class="project-card">
+            <h3>Customer Segmentation</h3>
+            <p>Used clustering analysis to identify customer segments based on demographics and spending behavior.</p>
+            <p><strong>Tools:</strong> Python, Scikit-learn, Pandas, Seaborn</p>
+            <p><strong>SDG:</strong> SDG 8 (Decent Work & Economic Growth)</p>
+            <a href="https://github.com/HRacheal">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>SMS Spam Classification</h3>
+            <p>Built a Naive Bayes classifier achieving 97% accuracy using TF-IDF vectorization and NLP preprocessing.</p>
+            <p><strong>Tools:</strong> Python, NLTK, Scikit-learn</p>
+            <p><strong>SDG:</strong> SDG 16 (Peace, Justice, & Strong Institutions)</p>
+            <a href="https://github.com/HRacheal">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Hospital Readmission Prediction</h3>
+            <p>Created a predictive model to assess 30-day readmission risk for cardiac patients using ensemble learning and SHAP interpretability.</p>
+            <p><strong>Tools:</strong> Python, Scikit-learn, SHAP, Pandas</p>
+            <p><strong>SDG:</strong> SDG 3 (Good Health & Well-being)</p>
+            <a href="https://github.com/HRacheal">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Movie Recommender System</h3>
+            <p>Designed a content-based recommendation engine using NLP on the TMDB dataset with a Streamlit interface.</p>
+            <p><strong>Tools:</strong> Python, Streamlit, Scikit-learn, Pandas</p>
+            <p><strong>SDG:</strong> SDG 9 (Industry, Innovation, & Infrastructure)</p>
+            <a href="https://github.com/HRacheal/Movie-Recommender-System">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>House Price Prediction</h3>
+            <p>Constructed a linear regression model to predict house prices using the Boston Housing dataset.</p>
+            <p><strong>Tools:</strong> Python, Scikit-learn, Pandas, Matplotlib, Seaborn</p>
+            <p><strong>SDG:</strong> SDG 11 (Sustainable Cities & Communities)</p>
+            <a href="https://github.com/HRacheal/House-Price-Prediction-using-linear-regression-project-1">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Food Security & Hybrid Rice Yield Prediction</h3>
+            <p>Built predictive models and dashboards to forecast hybrid rice yields and improve food security planning in Rwanda.</p>
+            <p><strong>Tools:</strong> Python, Power BI, Excel</p>
+            <p><strong>SDG:</strong> SDG 2 (Zero Hunger)</p>
+            <a href="https://github.com/HRacheal">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Internet Connectivity & Education Study</h3>
+            <p>Analyzed the effect of digital resource availability on student learning outcomes at Kibera Primary School.</p>
+            <p><strong>Tools:</strong> R, ggplot2, Excel</p>
+            <p><strong>SDG:</strong> SDG 4 (Quality Education)</p>
+            <a href="https://github.com/HRacheal">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Nutrition Analysis App (Korogocho & Viwandani)</h3>
+            <p>Developed an app to track dietary intake and recommend interventions for undernourished residents.</p>
+            <p><strong>Tools:</strong> Android, Python, Machine Learning</p>
+            <p><strong>SDG:</strong> SDG 3 (Good Health & Well-being)</p>
+            <a href="https://github.com/HRacheal">View on GitHub</a>
+        </div>
     </div>
-
-    <div class="project">
-        <h3>Customer Segmentation</h3>
-        <p>Used clustering analysis to identify customer segments based on demographics and spending behavior.</p>
-        <p><strong>Tools:</strong> Python, Scikit-learn, Pandas, Seaborn</p>
-        <p><strong>SDG Impact:</strong> SDG 8 (Decent Work & Economic Growth)</p>
-        <a href="https://github.com/HRacheal">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>SMS Spam Classification</h3>
-        <p>Built a Naive Bayes classifier achieving 97% accuracy using TF-IDF vectorization and NLP preprocessing.</p>
-        <p><strong>Tools:</strong> Python, NLTK, Scikit-learn</p>
-        <p><strong>SDG Impact:</strong> SDG 16 (Peace, Justice, & Strong Institutions)</p>
-        <a href="https://github.com/HRacheal">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Hospital Readmission Prediction</h3>
-        <p>Created a predictive model to assess 30-day readmission risk for cardiac patients using ensemble learning and SHAP interpretability.</p>
-        <p><strong>Tools:</strong> Python, Scikit-learn, SHAP, Pandas</p>
-        <p><strong>SDG Impact:</strong> SDG 3 (Good Health & Well-being)</p>
-        <a href="https://github.com/HRacheal">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Movie Recommender System</h3>
-        <p>Designed a content-based recommendation engine using NLP on the TMDB dataset with a Streamlit interface.</p>
-        <p><strong>Tools:</strong> Python, Streamlit, Scikit-learn, Pandas</p>
-        <p><strong>SDG Impact:</strong> SDG 9 (Industry, Innovation, & Infrastructure)</p>
-        <a href="https://github.com/HRacheal/Movie-Recommendation-System">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>House Price Prediction</h3>
-        <p>Constructed a linear regression model to predict house prices using the Boston Housing dataset.</p>
-        <p><strong>Tools:</strong> Python, Scikit-learn, Pandas, Matplotlib, Seaborn</p>
-        <p><strong>SDG Impact:</strong> SDG 11 (Sustainable Cities & Communities)</p>
-        <a href="https://github.com/HRacheal/House-Price-Prediction-using-linear-regression-project-1">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Food Security & Hybrid Rice Yield Prediction</h3>
-        <p>Built predictive models and dashboards to forecast hybrid rice yields and improve food security planning in Rwanda.</p>
-        <p><strong>Tools:</strong> Python, Power BI, Excel</p>
-        <p><strong>SDG Impact:</strong> SDG 2 (Zero Hunger)</p>
-        <a href="https://github.com/HRacheal">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Internet Connectivity & Education Study</h3>
-        <p>Analyzed the effect of digital resource availability on student learning outcomes at Kibera Primary School.</p>
-        <p><strong>Tools:</strong> R, ggplot2, Excel</p>
-        <p><strong>SDG Impact:</strong> SDG 4 (Quality Education)</p>
-        <a href="https://github.com/HRacheal">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Nutrition Analysis App (Korogocho & Viwandani)</h3>
-        <p>Developed an app to track dietary intake and recommend interventions for undernourished residents.</p>
-        <p><strong>Tools:</strong> Android, Python, Machine Learning</p>
-        <p><strong>SDG Impact:</strong> SDG 3 (Good Health & Well-being)</p>
-        <a href="https://github.com/HRacheal">View on GitHub</a>
-    </div>
-
 </section>
 
 <!-- EDUCATION -->
-<section>
+<section id="education">
     <h2>Education</h2>
-    <p><strong>BSc in Data Science & Analytics</strong><br>United States International University–Africa (Expected 2027)</p>
+    <div class="card">
+        <p><strong>BSc in Data Science & Analytics</strong><br>United States International University–Africa (Expected 2027)</p>
+    </div>
 </section>
 
 <!-- CERTIFICATIONS -->
-<section>
+<section id="certifications">
     <h2>Certifications & Training</h2>
-    <ul>
-        <li>Google Data Analytics Professional Certificate</li>
-        <li>IBM Data Science Professional Certificate</li>
-        <li>Microsoft Power BI Data Analyst Associate</li>
-        <li>SQL for Data Analysis</li>
-        <li>Data Science and Machine Learning Courses (Coursera, DataCamp)</li>
-        <li>Artificial Intelligence & Data Fundamentals</li>
-        <li>Time Series Forecasting & Predictive Analytics Bootcamps</li>
-    </ul>
+    <div class="card-grid">
+        <div class="card">Google Data Analytics Professional Certificate</div>
+        <div class="card">IBM Data Science Professional Certificate</div>
+        <div class="card">Microsoft Power BI Data Analyst Associate</div>
+        <div class="card">SQL for Data Analysis</div>
+        <div class="card">Data Science & ML Courses (Coursera, DataCamp)</div>
+        <div class="card">Artificial Intelligence & Data Fundamentals</div>
+        <div class="card">Time Series Forecasting & Predictive Analytics Bootcamps</div>
+    </div>
 </section>
 
 <!-- ACHIEVEMENTS -->
-<section>
+<section id="achievements">
     <h2>Achievements & Competitions</h2>
-    <ul>
-        <li>Finalist – Rwanda Rice Revival Social Venture Challenge</li>
-        <li>Essay Competition Participant</li>
-        <li>Datathon & University Research Presentations</li>
-        <li>Participant – IDEA for AFRICA</li>
-    </ul>
+    <div class="card-grid">
+        <div class="card">Finalist – Rwanda Rice Revival Social Venture Challenge</div>
+        <div class="card">Essay Competition Participant</div>
+        <div class="card">Datathon & University Research Presentations</div>
+        <div class="card">Participant – IDEA for AFRICA</div>
+    </div>
 </section>
 
-<!-- SOCIAL IMPACT / VOLUNTEERING -->
-<section>
+<!-- SOCIAL IMPACT -->
+<section id="volunteering">
     <h2>Social Impact / Volunteering</h2>
-    <ul>
-        <li>Implemented nutrition-focused projects in Korogocho and Viwandani</li>
-        <li>Advocated for SDG-aligned community initiatives in agriculture and education</li>
-        <li>Supported the creation of community kitchen gardens in Rwanda</li>
-        <li>Volunteered for World AIDS Day awareness campaigns at school</li>
-    </ul>
+    <div class="card-grid">
+        <div class="card">Implemented nutrition-focused projects in Korogocho and Viwandani</div>
+        <div class="card">Advocated for SDG-aligned community initiatives in agriculture and education</div>
+        <div class="card">Supported creation of community kitchen gardens in Rwanda</div>
+        <div class="card">Volunteered for World AIDS Day awareness campaigns at school</div>
+    </div>
 </section>
 
 <!-- CONTACT -->
-<section>
+<section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:hoziyanarachel7@gmail.com">hoziyanarachel7@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/HRacheal">github.com/HRacheal</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rachelhoziyana">linkedin.com/in/rachelhoziyana</a></p>
+    <div class="card-grid">
+        <div class="card"><i class="fas fa-envelope"></i> <a href="mailto:hoziyanarachel7@gmail.com">hoziyanarachel7@gmail.com</a></div>
+        <div class="card"><i class="fab fa-github"></i> <a href="https://github.com/HRacheal">github.com/HRacheal</a></div>
+        <div class="card"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/rachelhoziyana">linkedin.com/in/rachelhoziyana</a></div>
+    </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
     © 2025 Hoziyana Rachel
 </footer>
